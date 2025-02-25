@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='images/face.jpg') }}" alt="Profile Picture" class="profile-img">
+        <h2>Rahjay Jones</h2>
+        <p class="username">@rjones</p>
+        <p class="location">Kingston, Jamaica</p>
+        <p class="join-date">Joined {{ date_joined }}</p>
+        <p class="bio">
+            I am an athletic student who loves to code and do various outdoor activities and explore.
+        </p>
+        <div class="stats">
+            <span><strong>7</strong> Posts</span>
+            <span><strong>100</strong> Following</span>
+            <span><strong>250</strong> Followers</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+</div>
+{% endblock %}
